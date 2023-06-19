@@ -32,11 +32,11 @@ const showGifOnScreen = async (textInput) => {
 
 }
 
-button.addEventListener('mousedown', (event)=> {
+button.addEventListener('click', ()=> {
   button.setAttribute('class', 'buttonmove')
 })
 
-button.addEventListener('mouseup', (event)=> {
+button.addEventListener('click', ()=> {
   button.classList.remove('buttonmove')
 })
 
