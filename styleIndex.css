@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   height: 100vh;
@@ -18,16 +17,14 @@ body {
   text-align: center;
 }
 
-h1, form>div ,
-footer {
+/* 
+h1, form>div ,footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-h1,
-form,
-footer {
+h1, form , footer {
   background-color: #fcb93d;
 }
 
@@ -39,10 +36,13 @@ form {
   padding-bottom: 2%;
 }
 
-form>div {
+form > div {
   margin: 0 auto;
   width: 50%;
   /* background-color: violet; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search {
@@ -82,7 +82,7 @@ button:hover {
 
 @media (max-width: 400px) {
   .out {
-    background-color: red;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
 
   }
 }
@@ -98,20 +98,23 @@ img {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 30px;
 }
 
 
-footer>p {
+footer > p {
   font-size: 13px;
-  text-decoration: none
+  text-decoration: none;
 }
 
-footer>p>a {
-  text-decoration: none
+footer > p > a {
+  text-decoration: none;
 }
 
-footer>p>a::after {
+footer > p > a::after {
   position: absolute;
   display: inline-block;
   content: url(icons8-github-20.png);
