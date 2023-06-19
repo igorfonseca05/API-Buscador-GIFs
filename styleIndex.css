@@ -4,33 +4,40 @@
   box-sizing: border-box;
 }
 
+:root {
+  --elements-color: #EF6024;
+  --background-color: #ffefcd;
+  --font-color: #363432
+}
+
 html,body {
   font-size: 20px;
   font-family: Roboto, sans-serif;
   height: 100vh;
-  color: rgb(0, 0, 0);
+  color: var(--font-color);
 
 }
 
 body {
-  background-color: #eee;
+  background-color: var(--background-color);
   text-align: center;
 }
 
 
-h1, .alignElement ,footer {
+h1,.alignElement ,footer, #btnSearch{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 h1, form , footer {
-  background-color: #fcb93d;
+  background-color: var(--elements-color);
 }
 
 h1 {
-  height: 80px;
-  padding-top: 25px;
+  font-size: 27px;
+  height: 50px;
+  /* padding-top: 20px; */
 }
 
 form {
@@ -39,6 +46,7 @@ form {
 
 .alignElement {
   width: 100%;
+  height: 19px;
   /* background-color: violet; */
 
 }
@@ -48,24 +56,29 @@ form {
   font-size: 20px;
   outline: 0;
   border: none;
-  width: 60%;
+  width: 40%;
   height: 100%;
   padding-left: 2px;
   border-radius: 4px 0 0 4px;
 }
 
 .search::placeholder {
+  font-size: auto;
   color: rgba(0, 0, 0, 0.267);
+  
 }
 
-button {
+#btnSearch {
+  font-size: 15px;
+  background-color: #e7e5e5;
   border: none;
-  padding: 8px;
+  /* padding: 8px; */
   border-radius: 0 4px 4px 0;
-  height: 26.5px;
+  width: 10%;
+  height: 19px;
 }
 
-button:hover {
+#btnSearch:hover {
   background-color: #0B96DB;
   color: white;
 }
@@ -79,7 +92,6 @@ button:hover {
   /* margin-top: 2px; */
   height: 100vh;
   padding: 5px;
-  padding-right: 5px;
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-auto-rows: 200px;
@@ -123,7 +135,15 @@ footer > p > a::after {
 @media (max-width: 600px) {
   .out {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+    padding: 0 10px 0 10px;
 
+  }
+
+  h1{
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 25px;
+    height: 50px;
   }
 }
 
@@ -142,8 +162,9 @@ footer > p > a::after {
 
   .alignElement {
     width: 100%;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     /* background-color: violet; */
+    padding-bottom: 5px;
   
   }
 
