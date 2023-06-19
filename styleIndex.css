@@ -19,8 +19,7 @@ body {
   text-align: center;
 }
 
-h,
-form>div,
+h1,form>div,
 footer {
   display: flex;
   align-items: center;
