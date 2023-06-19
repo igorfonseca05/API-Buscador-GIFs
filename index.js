@@ -1,6 +1,7 @@
 
 const form = document.querySelector('form')
 const out = document.querySelector('.out')
+const button = document.querySelector('button')
 
 const getGif = async (textInput) => {
   try {
@@ -30,6 +31,14 @@ const showGifOnScreen = async (textInput) => {
   }
 
 }
+
+button.addEventListener('mousedown', (event)=> {
+  button.setAttribute('class', 'buttonmove')
+})
+
+button.addEventListener('mouseup', (event)=> {
+  button.classList.remove('buttonmove')
+})
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
