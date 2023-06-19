@@ -7,7 +7,6 @@
 html,
 body {
   font-size: 20px;
-  line-height: 1.6;
   font-family: Roboto, sans-serif;
   height: 100vh;
   color: rgb(0, 0, 0);
@@ -19,7 +18,7 @@ body {
   text-align: center;
 }
 
-h1,form>div,
+h1, form>div ,
 footer {
   display: flex;
   align-items: center;
@@ -33,7 +32,7 @@ footer {
 }
 
 h1 {
-  height: 15%;
+  height: 10%;
 }
 
 form {
@@ -41,7 +40,6 @@ form {
 }
 
 form>div {
-
   margin: 0 auto;
   width: 50%;
   /* background-color: violet; */
@@ -82,7 +80,7 @@ button:hover {
   align-items: start;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .out {
     margin-top: 2px;
     height: 100vh;
@@ -96,6 +94,11 @@ button:hover {
     margin: 0 auto;
     width: 80%;
     /* background-color: violet; */
+  }
+
+  h1{
+    font-size: 30px;
+    height: auto;
   }
 }
 
