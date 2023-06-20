@@ -50,7 +50,6 @@ h1 {
 
 form {
   padding: 50px 0px 40px 0px;
-
 }
 
 .alignElement, #btnSearch {
@@ -127,7 +126,7 @@ footer {
 
 footer > p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -145,12 +144,11 @@ footer > p > a:hover {
   .out {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     padding: 0 10px 0 10px;
-
   }
 
   h1{
     white-space: nowrap;
-    padding: 0px;
+    padding: 20px 0px 0px 0px;
     font-size: 25px;
     height: 50px;
   }
@@ -159,12 +157,21 @@ footer > p > a:hover {
     font-size: 10px;
     background-color: var(--botao);
     border: none;
-    /* padding: 8px; */
     border-radius: 0 4px 4px 0;
-    width: 15%;
+    width: 70px;
     height: 19px;
     font-size: 13px;
   }
+
+  .alignElement, #btnSearch {
+    height: 40px;
+  }
+
+  form {
+    padding: 10px 0px 20px 0px;
+  }
+  
+  
 }
 
 @media (max-width: 400px) {
@@ -182,20 +189,27 @@ footer > p > a:hover {
 
   .alignElement {
     width: 100%;
-    /* padding-bottom: 8px; */
-    /* background-color: violet; */
-    padding-bottom: 5px;
-  
+  }
+
+  .search {
+    width: 60%;
   }
 
   #btnSearch {
-    font-size: 10px;
     background-color: var(--botao);
     border: none;
     /* padding: 8px; */
     border-radius: 0 4px 4px 0;
-    width: 15%;
-    height: 14px;
+    width: 70px;
+
+  }
+
+  .alignElement, #btnSearch {
+    height: 40px;
+  }
+
+  form {
+    padding: 5px 0px 10px 0px;
   }
 
 }
