@@ -1,7 +1,7 @@
 
 const form = document.querySelector('form')
 const out = document.querySelector('.out')
-const button = document.querySelector('btnSearch')
+const button = document.querySelector('#btnSearch')
 
 const getGif = async (textInput) => {
   try {
