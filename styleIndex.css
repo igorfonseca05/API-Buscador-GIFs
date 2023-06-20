@@ -6,7 +6,7 @@
 
 :root {
   --elements-color: #EF6024;
-  --background-color: #ffefcd;
+  --background-color: #1a1a1a;
   --font-color: #ffffff;
   --botao: #eeeeeed2;
 }
@@ -38,7 +38,7 @@ h1,.alignElement ,footer, #btnSearch{
 }
 
 h1, form ,footer {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-color);
   
 }
 
@@ -60,8 +60,9 @@ form {
 }
 
 .search {
+  
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   outline: 0;
   border: none;
   width: 40%;
@@ -69,6 +70,7 @@ form {
   padding-left: 2px;
   border-radius: 4px 0 0 4px;
   background-color: #eee;
+  padding-bottom: 3px;
 }
 
 .search::placeholder {
@@ -120,7 +122,7 @@ img {
 }
 
 footer {
-  height: 30px;
+  height: 20px;
 }
 
 
@@ -131,11 +133,11 @@ footer > p {
 }
 
 footer > p > a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--font-color);
 }
 footer > p > a:hover {
-  text-decoration: none;
+
   color: #0B96DB;
 }
 
@@ -161,7 +163,8 @@ footer > p > a:hover {
     /* padding: 8px; */
     border-radius: 0 4px 4px 0;
     width: 15%;
-    height: 25px;
+    height: 19px;
+    font-size: 13px;
   }
 }
 
@@ -193,7 +196,7 @@ footer > p > a:hover {
     /* padding: 8px; */
     border-radius: 0 4px 4px 0;
     width: 15%;
-    height: px;
+    height: 14px;
   }
 
 }
